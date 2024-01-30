@@ -1,0 +1,14 @@
+$background: #3c475c;
+$orange: #f7a059;
+$dark-text: #b4afab;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+
+    a {
+        all: unset;
+      }
+}

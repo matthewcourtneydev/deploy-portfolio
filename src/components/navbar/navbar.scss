@@ -1,0 +1,118 @@
+$background: #3c475c;
+$orange: #f7a059;
+$dark-text: #b4afab;
+
+
+@media only screen and (max-width: 1025px) and (min-width: 320px)  {
+#nav-bar {
+    counter-set: nav-counter;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(#3c475c, #3c475c14);
+
+    #bars {
+      color: $orange;
+      position: fixed;
+      right: 30px;
+    }
+
+    #logo {
+      color: $orange;
+    }
+
+    #nav-items {
+      display: none;
+    }
+
+    #resume {
+      font-weight: normal;
+      width: fit-content;
+      border-radius: 2px;
+      color: $orange;
+      border: solid 2px $orange;
+      margin-top: -5px;
+
+      li {
+        margin: 5px 7px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1026px)  {
+    #nav-bar {
+        counter-set: nav-counter;
+        font-size: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+        padding-top: 0;
+        left: 0;
+        z-index: 1000;
+        position: inherit;
+
+        #logo {
+          padding-left: 50px;
+          padding-top: 8px;
+          color: $orange;
+          vertical-align: middle;
+          position: absolute;
+        }
+
+        #bars {
+          display: none;
+        }
+
+        #nav-items {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          width: 60%;
+          max-width: 900px;
+          min-width: 600px;
+          margin-left: auto;
+          font-weight: bold;
+          color: $dark-text;
+          padding-right: 50px;
+          padding-top: 15px;
+
+          .nav-item:before {
+            content: counter(nav-counter, decimal-leading-zero) ".";
+            counter-increment: nav-counter;
+            margin-right: 4px;
+            font-size: 15px;
+            color: $orange;
+          }
+
+          .nav-item:hover {
+            color: $orange;
+          } 
+
+          #resume {
+            font-weight: normal;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 2px;
+            padding: 7px 35px;
+            color: $orange;
+            border: solid 2px $orange;
+            margin-top: -9px;
+
+            li {
+              margin: 0;
+            }
+          }
+
+          #resume:hover {
+            background-color: $orange;
+            color: $background;
+          }
+        }
+      }
+  }
