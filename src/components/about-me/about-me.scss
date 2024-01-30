@@ -1,0 +1,127 @@
+$dark-text: #b4afab;
+$orange: #f7a059;
+$tech-text: "Share Tech", sans-serif;
+$bold-text: "Roboto", sans-serif;
+$background: #3c475c;
+$blur: #29303f;
+$transparentOrange: #f7a05926;
+
+#about-me {
+    padding-top: 70px;
+    height: fit-content;
+    padding-bottom: 55px;
+
+    .text-container {
+      width: 100%;
+      display: inline-block;
+
+      p {
+        color: $dark-text;
+        font-family: $bold-text;
+        font-size: 13px;
+        line-height: 20px;
+
+        span {
+          color: $orange;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 40px;
+      border: solid 2px $orange;
+    }
+
+    #accent-square {
+      display: none;
+    }
+
+    #technologies-about-me {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      height: 70px;
+
+      .technology {
+        width: 40%;
+        margin-top: 7px;
+        font-size: 12px;
+        font-family: $tech-text;
+        color: $dark-text;
+      }
+
+      .technology::before {
+        content: "\25B2";
+        color: $orange;
+        margin-right: 10px;
+        font-size: 10px;
+      }
+    }
+  }
+
+
+@media only screen and (min-width: 1026px) and (max-width: 2500px) {
+    #about-me {
+        padding-bottom: 300px;
+        .content-container {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+
+          .text-container {
+            width: 45%;
+
+            p {
+              font-size: 20px;
+              line-height: 30px;
+            }
+
+            #technologies-about-me {
+              .technology {
+                font-size: 18px;
+              }
+
+              .technology::before {
+                font-size: 15px;
+              }
+            }
+          }
+
+          img {
+            height: 500px;
+            width: 500px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 20px;
+            z-index: 2;
+            position: absolute;
+            right: 40px;
+          }
+
+          #accent-square {
+            display: inline-flex;
+            height: 500px;
+            width: 500px;
+            margin-top: 20px;
+            border: solid 2px $orange;
+            border-radius: 5px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            // right: 1%;
+            // bottom: 20%;
+            // z-index: 1;
+          }
+        }
+      }
+}
+
+@media only screen and (min-width: 2501px) {
+
+}

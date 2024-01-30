@@ -11,10 +11,8 @@ function Navbar() {
 
   window.addEventListener("scroll", () => {
     if (lastScrollY < window.scrollY) {
-      console.log("down");
       setIsScrollingDown(true);
     } else {
-      console.log("up");
       setIsScrollingDown(false);
     }
 

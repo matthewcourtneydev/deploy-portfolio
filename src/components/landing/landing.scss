@@ -1,0 +1,144 @@
+$dark-text: #b4afab;
+$orange: #f7a059;
+$tech-text: "Share Tech", sans-serif;
+$bold-text: "Roboto", sans-serif;
+$background: #3c475c;
+$blur: #29303f;
+$transparentOrange: #f7a05926;
+
+#landing {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+
+    h4 {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    #hello {
+      color: $orange;
+      font-family: $tech-text;
+      font-size: 30px;
+    }
+
+    #name {
+      color: rgb(243, 243, 243);
+      font-family: $bold-text;
+      font-size: 35px;
+    }
+
+    #message {
+      font-size: 30px;
+      font-family: $bold-text;
+      font-weight: 2em;
+      color: $dark-text;
+    }
+
+    #bio {
+      color: $dark-text;
+      font-family: $bold-text;
+      padding-top: 20px;
+      font-size: 13px;
+      line-height: 20px;
+      margin: 0;
+      span {
+        color: $orange;
+      }
+
+      margin-bottom: 50px;
+    }
+
+    #landing-button {
+      background: none;
+      font-size: 15px;
+      border: solid 2px $orange;
+      border-radius: 5px;
+      color: $orange;
+      padding: 10px 50px;
+    }
+
+
+    #landing-button:hover {
+      background-color: $orange;
+      color: $background;
+    }
+  }
+
+@media only screen and (min-width: 1026px) and (max-width: 2500px)  {
+    #landing {
+        justify-content: center;
+        padding-top: 10vh;
+
+        p {
+          margin-top: 0;
+        }
+
+        #hello {
+          font-size: 40px;
+        }
+
+        #name {
+          font-size: 105px;
+        }
+
+        #message {
+          font-size: 80px;
+        }
+        #bio {
+          max-width: 700px;
+          padding-top: 20px;
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 25px;
+        }
+
+        #landing-button {
+            background: none;
+            font-size: 25px;
+            border: solid 2px $orange;
+            border-radius: 3px;
+            color: $orange;
+            padding: 12px 30px;
+          }
+      }
+}
+
+@media only screen and (min-width: 2501px) {
+    #landing {
+        justify-content: center;
+        padding-top: 15vh;
+
+        p {
+          margin-top: 0;
+        }
+
+        #hello {
+          font-size: 110px;
+        }
+
+        #name {
+          font-size: 280px;
+        }
+
+        #message {
+          font-size: 190px;
+        }
+        #bio {
+          max-width: 80%;
+          padding-top: 30px;
+          font-size: 70px;
+          line-height: 70px;
+          font-weight: 400;
+          margin-bottom: 80px;
+        }
+
+        #landing-button {
+            background: none;
+            font-size: 65px;
+            border: solid 3px $orange;
+            border-radius: 5px;
+            color: $orange;
+            padding: 20px 60px;
+          }
+      }
+}
